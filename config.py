@@ -4,52 +4,54 @@
 
 # For Maverick
 site_prefix = "/"
-template = "Galileo"
+template = "Kepler"
 index_page_size = 10
 archives_page_size = 30
 fetch_remote_imgs = False
 enable_jsdelivr = {
-    "enabled": False,
+    "enabled": True,
     "repo": "AlanDecode/Maverick@gh-pages"
 }
 locale = "Asia/Shanghai"
-category_by_folder = False
+category_by_folder = True
 
-# For site
-site_name = "Maverick"
-site_logo = "${static_prefix}android-chrome-512x512.png"
-site_build_date = "2019-12-06T12:00+08:00"
-author = "AlanDecode"
-email = "hi@imalan.cn"
-author_homepage = "https://www.imalan.cn"
-description = "This is Maverick, Theme Galileo."
-key_words = ["Maverick", "AlanDecode", "Galileo", "blog"]
-language = 'english'
+enable_jsdelivr = {
+    "enabled": True,
+    "repo": "noiraimer/Blog-With-GitHub-Boilerplate@gh-pages"
+}
+
+# 站点设置
+site_name = "解语知识"
+site_logo = "${static_prefix}logo.png"
+site_build_date = "2020/1/31 16:51"
+author = "无尽藏海"
+email = ""
+author_homepage = "https://noiramr.cn"
+description = "温故而知新"
+key_words = ['blog']
+language = 'zh-CN'
 external_links = [
     {
-        "name": "Maverick",
-        "url": "https://github.com/AlanDecode/Maverick",
-        "brief": "🏄‍ Go My Own Way."
+        "name": "解语知音",
+        "url": "https://noiramr.cn",
+        "brief": "温故而知新",
+        "target": "_self"
     },
-    {
-        "name": "Triple NULL",
-        "url": "https://www.imalan.cn",
-        "brief": "Home page for AlanDecode."
-    }
+
 ]
 nav = [
     {
-        "name": "Home",
+        "name": "首页",
         "url": "${site_prefix}",
         "target": "_self"
     },
     {
-        "name": "Archives",
+        "name": "归档",
         "url": "${site_prefix}archives/",
         "target": "_self"
     },
     {
-        "name": "About",
+        "name": "关于",
         "url": "${site_prefix}about/",
         "target": "_self"
     }
@@ -57,33 +59,52 @@ nav = [
 
 social_links = [
     {
-        "name": "Twitter",
-        "url": "https://twitter.com/AlanDecode",
-        "icon": "gi gi-twitter"
+        "name": "RSS",
+        "url": "https://noiramr.cn/feed/index.xml",
+        "icon": ""
     },
     {
         "name": "GitHub",
-        "url": "https://github.com/AlanDecode",
-        "icon": "gi gi-github"
+        "url": "https://github.com/noiraimer",
+        "icon": ""
+    },
+        {
+        "name": "邮件",
+        "url": "mailto:liushu1187419589@live.com",
+        "icon": ""
     },
     {
-        "name": "Weibo",
-        "url": "https://weibo.com/5245109677/",
-        "icon": "gi gi-weibo"
-    }
+        "name": "语雀",
+        "url": "https://www.yuque.com/blancaimer",
+        "icon": ""
+    },
 ]
 
 valine = {
     "enable": True,
     "el": '#vcomments',
-    "appId": "IKRAfuPq0zrz6Wfje8ahHAIP-gzGzoHsz",
-    "appKey": "lFaCWkd4xCs0Ng5UWs1eHNwU",
-    "visitor": True,
-    "recordIP": True
+    "appId": "A5LqJrDsqGpBkcSAG6rOaquz-gzGzoHsz",
+    "appKey": "MpkTdroEzvOmHrw5l1vnX8Oq",
+    "placeholder": "想破脑袋也不知道提示语写啥"
 }
 
-head_addon = ''
+head_addon = r'''
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<link rel="dns-prefetch" href="//noiramr.cn" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/noiraimer/Blog-With-GitHub-Boilerplate@gh-pages/css/custom.css">
+<script src="https://cdn.jsdelivr.net/gh/noiraimer/Blog-With-GitHub-Boilerplate@gh-pages/js/instant.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<script src="https://cdn.jsdelivr.net/gh/noiraimer/Blog-With-GitHub-Boilerplate@gh-pages/js/email-decode.min.js"></script>
+<link rel="shortcut icon" href="${static_prefix}favicon.ico?v=yyLyaqbyRG">
+'''
 
-footer_addon = ''
+footer_addon = r'''
 
-body_addon = ''
+'''
+
+body_addon = r'''
+
+'''
+main_addon = r'''
+
+'''
