@@ -17,7 +17,7 @@ category_by_folder = True
 
 enable_jsdelivr = {
     "enabled": True,
-    "repo": "noiraimer/Blog-With-GitHub-Boilerplate@gh-pages"
+    "repo": "noiraimer/Mavrick@gh-pages"
 }
 
 # 站点设置
