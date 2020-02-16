@@ -4,14 +4,13 @@
 
 # For Maverick
 site_prefix = "/"
-source_dir = "./src/"
 template = "Kepler"
 index_page_size = 10
 archives_page_size = 30
 fetch_remote_imgs = False
 enable_jsdelivr = {
-    "enabled": True,
-    "repo": "AlanDecode/Maverick@gh-pages"
+    "enabled": False,
+    "repo": ""
 }
 locale = "Asia/Shanghai"
 category_by_folder = True
