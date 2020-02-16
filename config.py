@@ -4,8 +4,8 @@
 
 # For Maverick
 site_prefix = "/"
-source_dir = "../src/"
-build_dir = "../dist/"
+source_dir = "./src/"
+build_dir = "./dist/"
 template = "Kepler"
 index_page_size = 10
 archives_page_size = 30
